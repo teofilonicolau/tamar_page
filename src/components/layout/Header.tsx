@@ -137,7 +137,7 @@ export function Header() {
                             </a>
                         ))}
                         <Button
-                            variant="primary"
+                            variant="default"
                             className="w-full mt-4"
                             onClick={() => {
                                 window.open(CONTACT_INFO.whatsapp.link, '_blank');
