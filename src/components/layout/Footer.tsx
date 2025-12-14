@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Container } from '../ui/container';
 import { CONTACT_INFO } from '../../constants';
 import { TikTokIcon } from '../ui/icons';
@@ -23,9 +24,9 @@ export function Footer() {
                     <div>
                         <h4 className="font-bold text-white mb-4">Links Rápidos</h4>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#home" className="hover:text-brand-gold transition-colors">Home</a></li>
-                            <li><a href="#sobre" className="hover:text-brand-gold transition-colors">Sobre</a></li>
-                            <li><a href="#servicos" className="hover:text-brand-gold transition-colors">Serviços</a></li>
+                            <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-gold transition-colors">Home</Link></li>
+                            <li><Link to="/sobre" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-gold transition-colors">Sobre</Link></li>
+                            <li><a href="/#servicos" className="hover:text-brand-gold transition-colors">Serviços</a></li>
                             <li><a href={CONTACT_INFO.whatsapp.link} target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">Contato</a></li>
                         </ul>
                     </div>
@@ -33,8 +34,8 @@ export function Footer() {
                     <div>
                         <h4 className="font-bold text-white mb-4">Legal</h4>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-brand-gold transition-colors">Política de Privacidade</a></li>
-                            <li><a href="#" className="hover:text-brand-gold transition-colors">Termos de Uso</a></li>
+                            <li><Link to="/politica-privacidade" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-gold transition-colors">Política de Privacidade</Link></li>
+                            <li><Link to="/termos-de-uso" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-gold transition-colors">Termos de Uso</Link></li>
                         </ul>
                     </div>
 

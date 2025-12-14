@@ -3,6 +3,8 @@ import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { Home } from './pages/Home';
 import { Sobre } from './pages/Sobre';
+import { PoliticaPrivacidade } from './pages/PoliticaPrivacidade';
+import { TermosUso } from './pages/TermosUso';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
+          <Route path="/termos-de-uso" element={<TermosUso />} />
         </Routes>
         <Footer />
       </div>
