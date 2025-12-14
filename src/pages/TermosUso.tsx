@@ -24,15 +24,21 @@ export function TermosUso() {
                 <div className="space-y-8 text-gray-300 leading-relaxed">
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Introdução</h2>
-                        <p>Estes Termos de Uso regulam o acesso e utilização da plataforma TamarAI. Ao se cadastrar, você concorda com as regras abaixo.</p>
+                        <p>
+                            Estes Termos de Uso regulam o acesso e utilização da plataforma TamarAI.
+                            Ao se cadastrar, você concorda com as regras abaixo.
+                        </p>
                     </section>
 
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Serviços</h2>
                         <ul className="list-disc pl-6 space-y-2">
                             <li>Plataforma de automação e agendamento inteligente.</li>
-                            <li>Planos de assinatura mensal (R$29/mês).</li>
+                            <li>Landing Pages de alta conversão.</li>
+                            <li>Cartões Virtuais interativos e sustentáveis.</li>
+                            <li>Sites Institucionais otimizados para SEO.</li>
                             <li>Integração com WhatsApp para lembretes automáticos.</li>
+                            <li>Planos de assinatura mensal em formato de microSaaS acessível.</li>
                         </ul>
                     </section>
 
@@ -76,6 +82,7 @@ export function TermosUso() {
                         <ul className="list-disc pl-6 space-y-2">
                             <li>A TamarAI não se responsabiliza por falhas externas (internet, serviços de terceiros).</li>
                             <li>O usuário é responsável pelo uso correto da plataforma.</li>
+                            <li>A TamarAI fornece ferramentas digitais, mas não garante resultados comerciais diretos (como aumento de vendas).</li>
                         </ul>
                     </section>
 

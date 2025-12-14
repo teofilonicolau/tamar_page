@@ -24,7 +24,9 @@ export function PoliticaPrivacidade() {
                 <div className="space-y-8 text-gray-300 leading-relaxed">
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Introdução</h2>
-                        <p>Na TamarAI, valorizamos a confiança dos nossos clientes. Esta Política de Privacidade explica como coletamos, usamos e protegemos seus dados pessoais ao utilizar nossos serviços de automação e agendamento.</p>
+                        <p>
+                            Na TamarAI, valorizamos a confiança dos nossos clientes. Esta Política de Privacidade explica como coletamos, usamos e protegemos seus dados pessoais ao utilizar nossos serviços digitais, incluindo landing pages, cartões virtuais, sites institucionais e automação inteligente.
+                        </p>
                     </section>
 
                     <section>
@@ -40,7 +42,7 @@ export function PoliticaPrivacidade() {
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Finalidade</h2>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Permitir acesso ao sistema de agendamento e automação.</li>
+                            <li>Permitir acesso às soluções digitais da TamarAI.</li>
                             <li>Processar pagamentos recorrentes.</li>
                             <li>Enviar notificações e lembretes via WhatsApp API.</li>
                             <li>Melhorar continuamente nossos serviços.</li>
@@ -65,18 +67,36 @@ export function PoliticaPrivacidade() {
                     </section>
 
                     <section>
+                        <h2 className="text-2xl font-bold text-white mb-4">Retenção de Dados</h2>
+                        <p>
+                            Mantemos os dados enquanto a conta do usuário estiver ativa e pelo prazo legal após o encerramento. Após este período, os dados são anonimizados ou excluídos de forma segura.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl font-bold text-white mb-4">Política de Cookies</h2>
+                        <p>
+                            Utilizamos cookies para melhorar a navegação, analisar métricas de uso e personalizar a experiência. O usuário pode gerenciar suas preferências de cookies diretamente no navegador.
+                        </p>
+                    </section>
+
+                    <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Direitos do Usuário</h2>
                         <p className="mb-2">Você pode solicitar:</p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li>Acesso aos seus dados.</li>
                             <li>Correção ou exclusão.</li>
+                            <li>Portabilidade dos dados.</li>
                             <li>Cancelamento de consentimento.</li>
+                            <li>Reclamação junto à ANPD (Autoridade Nacional de Proteção de Dados).</li>
                         </ul>
                     </section>
 
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Contato</h2>
-                        <p>Dúvidas? Entre em contato: <strong>teofilonicolau157@gmail.com</strong></p>
+                        <p>
+                            Dúvidas? Entre em contato: <strong>privacidade@tamarai.com</strong> (em breve disponível).
+                        </p>
                     </section>
                 </div>
             </Container>
