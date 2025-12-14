@@ -23,7 +23,7 @@ export function Hero() {
                     className="space-y-6 text-center md:text-left"
                 >
                     <div className="inline-block px-4 py-1.5 rounded-full border border-brand-gold/30 bg-brand-gold/10 backdrop-blur-sm">
-                        <span className="text-brand-gold text-sm font-semibold tracking-wider">INOVAÇÃO DIGITAL EM ICÓ/CE</span>
+                        <span className="text-brand-gold text-sm font-semibold tracking-wider">Do interior do Ceará para o Brasil inteiro</span>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-display leading-tight text-white drop-shadow-2xl">
