@@ -72,14 +72,7 @@ export function Hero() {
                             }}
                         />
 
-                        {/* Floating Elements (abstract) */}
-                        <motion.div
-                            className="absolute top-10 right-10 p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl z-20"
-                            animate={{ y: [0, 15, 0] }}
-                            transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-                        >
-                            <MessageCircle className="text-brand-gold w-8 h-8" />
-                        </motion.div>
+
                     </div>
                 </motion.div>
             </Container>
