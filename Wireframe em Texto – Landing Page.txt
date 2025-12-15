@@ -1,0 +1,63 @@
+📐 Wireframe Textual – Landing Page TamarAI
+
+[HEADER - fixo]
+-------------------------------------------------
+Logo TamarAI | Menu (Home | Sobre | Serviços | Contato) | Botão CTA "Fale Conosco"
+-------------------------------------------------
+
+[HERO SECTION - primeira dobra]
+-------------------------------------------------
+Título: "Transforme seu negócio com soluções digitais inteligentes."
+Subtítulo: "Landing pages, automações e cartões virtuais para profissionais que querem crescer."
+Botão CTA: "Quero minha solução agora"
+Imagem/ilustração tecnológica (cérebro TamarAI ou ícones de negócios)
+-------------------------------------------------
+
+[BENEFÍCIOS]
+-------------------------------------------------
+Card 1: Ícone + "Credibilidade" - presença digital profissional
+Card 2: Ícone + "Simplicidade" - soluções rápidas e acessíveis
+Card 3: Ícone + "Automação" - mais tempo para focar no que importa
+Card 4: Ícone + "Custo-benefício" - planos justos para pequenos negócios
+-------------------------------------------------
+
+[SERVIÇOS OFERECIDOS]
+-------------------------------------------------
+Grid com ícones:
+- Landing Pages
+- Sites institucionais
+- Cartões de visita virtuais
+- Microsserviços e automações
+Cada item com breve descrição + CTA "Saiba mais"
+-------------------------------------------------
+
+[PROVA SOCIAL / DEPOIMENTOS]
+-------------------------------------------------
+Título: "Mais de 10.000 clientes atendidos"
+Depoimentos curtos (advogados, médicos, barbeiros, etc.)
+Fotos/ícones para credibilidade
+-------------------------------------------------
+
+[CHAMADA PARA AÇÃO FORTE]
+-------------------------------------------------
+Fundo dourado
+Texto: "Pronto para levar seu negócio ao próximo nível?"
+Botão CTA: "Fale com um especialista agora"
+-------------------------------------------------
+
+[RODAPÉ]
+-------------------------------------------------
+Links rápidos (Home | Sobre | Serviços | Contato)
+Endereço e contatos
+Redes sociais
+Crédito: "Desenvolvido por TamarAI"
+Botão flutuante do WhatsApp fixo no canto inferior direito
+-------------------------------------------------
+
+Estrutura pensada para mobile first: blocos verticais, CTAs sempre visíveis.
+
+Dark mode aplicado com azul-marinho como fundo principal.
+
+CTAs repetidos em pontos estratégicos (hero, meio, final).
+
+Layout otimizado para conversão e credibilidade.

@@ -155,32 +155,35 @@ END:VCARD`;
             {/* Share Modal */}
             <AnimatePresence>
                 {isShareOpen && (
-                    <>
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 flex items-center justify-center p-4"
+                    >
+                        <div
+                            className="absolute inset-0 bg-black/80 backdrop-blur-sm"
                             onClick={() => setIsShareOpen(false)}
-                            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50"
                         />
                         <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.9 }}
-                            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-sm bg-brand-navy border border-white/10 rounded-3xl p-6 z-50 shadow-2xl"
+                            initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+                            className="relative w-full max-w-sm bg-brand-navy border border-white/10 rounded-3xl p-6 shadow-2xl z-10"
+                            onClick={(e) => e.stopPropagation()}
                         >
                             <div className="flex justify-between items-center mb-6">
                                 <h3 className="text-xl font-bold text-white">Compartilhar Cartão</h3>
-                                <button onClick={() => setIsShareOpen(false)} className="text-gray-400 hover:text-white">
+                                <button onClick={() => setIsShareOpen(false)} className="text-gray-400 hover:text-white transition-colors">
                                     <X />
                                 </button>
                             </div>
 
-                            <div className="bg-white p-4 rounded-2xl mb-6 mx-auto w-fit">
+                            <div className="bg-white p-4 rounded-2xl mb-6 mx-auto w-fit shadow-inner">
                                 <img
                                     src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(cardUrl)}&color=0A1F44`}
                                     alt="QR Code"
-                                    className="w-48 h-48"
+                                    className="w-48 h-48 block"
                                 />
                             </div>
 
@@ -189,14 +192,14 @@ END:VCARD`;
                                     type="text"
                                     value={cardUrl}
                                     readOnly
-                                    className="flex-1 bg-black/30 border border-white/10 rounded-lg px-4 text-sm text-gray-300 outline-none"
+                                    className="flex-1 bg-black/30 border border-white/10 rounded-lg px-4 text-sm text-gray-300 outline-none focus:border-brand-gold/50 transition-colors"
                                 />
-                                <Button onClick={handleCopyLink} className="bg-brand-gold hover:bg-brand-goldhover text-brand-navy">
+                                <Button onClick={handleCopyLink} className="bg-brand-gold hover:bg-brand-goldhover text-brand-navy shrink-0">
                                     {copied ? <Check size={18} /> : <Copy size={18} />}
                                 </Button>
                             </div>
                         </motion.div>
-                    </>
+                    </motion.div>
                 )}
             </AnimatePresence>
 
