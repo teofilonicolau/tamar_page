@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import { Sobre } from './pages/Sobre';
 import { PoliticaPrivacidade } from './pages/PoliticaPrivacidade';
 import { TermosUso } from './pages/TermosUso';
+import { Cartao } from './pages/Cartao';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/termos-de-uso" element={<TermosUso />} />
+          <Route path="/cartao" element={<Cartao />} />
         </Routes>
         <Footer />
       </div>

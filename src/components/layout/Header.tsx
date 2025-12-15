@@ -74,6 +74,7 @@ export function Header() {
         { name: 'Home', href: '/#home' }, // Changed to /#home implies Home route + ID
         { name: 'Sobre', href: '/sobre' },
         { name: 'Serviços', href: '#servicos' },
+        { name: 'Cartão Digital', href: '/cartao' },
         { name: 'Contato', href: '#contato' },
     ];
 

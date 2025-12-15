@@ -7,11 +7,12 @@ Landing Page institucional moderna e interativa para a **TamarAI**, uma startup 
 Este projeto é a vitrine digital da TamarAI. Mais do que um site estático, é uma plataforma de apresentação que demonstra na prática as soluções oferecidas, como:
 - **Automação de Petições:** "LawClerk" e outras ferramentas jurídicas.
 - **Landing Pages de Alta Conversão:** Design focado em resultados.
-- **Cartões de Visita Digitais:** Modernidade para networking.
+- **Cartões de Visita Digitais:** Solução completa com QR Code e arquivo VCF para networking.
 - **Automação de Atendimento:** Chatbots inteligentes via WhatsApp.
 
 ### ✨ Destaques da Interface
 - **Animações Fluidas:** Uso de `framer-motion` para transições suaves e elementos interativos.
+- **Cartão Digital Integrado:** Página dedicada (`/cartao`) com compartilhamento via QR Code e download de contato.
 - **Design Responsivo:** Totalmente adaptado para mobile (Mobile-First) e desktop.
 - **Demo Interativa:** Seção exclusiva "Wow Factor" onde o usuário visualiza prévias reais dos serviços (VCard giratório, LP scrollando, etc.).
 - **Modo Dark Premium:** Paleta de cores sofisticada (Navy & Gold) transmitindo autoridade e tecnologia.

@@ -26,6 +26,7 @@ export function Footer() {
                         <ul className="space-y-2 text-sm text-gray-400">
                             <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-gold transition-colors">Home</Link></li>
                             <li><Link to="/sobre" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-gold transition-colors">Sobre</Link></li>
+                            <li><Link to="/cartao" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-gold transition-colors">Cartão Digital</Link></li>
                             <li><a href="/#servicos" className="hover:text-brand-gold transition-colors">Serviços</a></li>
                             <li><a href={CONTACT_INFO.whatsapp.link} target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">Contato</a></li>
                         </ul>
