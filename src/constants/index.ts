@@ -7,7 +7,7 @@ export const CONTACT_INFO = {
     social: {
         instagram: "https://www.instagram.com/tamar_ia_",
         linkedin: "https://www.linkedin.com/in/teofilo-nicolau/",
-        email: "mailto:teofilonicolau157@gmail.com",
+        email: "mailto:contato@tamarai.com.br",
         tiktok: "https://www.tiktok.com/@tamarai790"
     }
 };
