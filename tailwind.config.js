@@ -8,12 +8,14 @@ export default {
     extend: {
       colors: {
         brand: {
-          navy: '#0A1F44',
-          gold: '#C9A94A',
+          navy: '#0E0024', // Now serves as the main dark background (Purple Dark)
+          gold: '#8C45FF', // Now serves as Primary Purple
           white: '#FFFFFF',
           gray: '#E5E5E5',
-          dark: '#051024', // Darker shade for backgrounds
-          goldhover: '#B0933F', // Hover state for gold
+          dark: '#020005', // Deepest Purple Black
+          goldhover: '#7A35EB', // Hover state for primary purple
+          secondary: '#B894FF', // Light Violet
+          accent: '#180036', // Secondary Dark
         }
       },
       fontFamily: {

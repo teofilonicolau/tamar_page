@@ -1,92 +1,117 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/button';
-import { Container } from '../ui/container';
-import { SectionWrapper } from '../ui/section-wrapper';
 import { CONTACT_INFO } from '../../constants';
 
 export function Hero() {
+    const sectionRef = useRef<HTMLElement>(null);
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ["start end", "end start"],
+    });
+
+    const backgroundPositionY = useTransform(
+        scrollYProgress,
+        [0, 1],
+        [-300, 300],
+    );
+
     return (
-        <SectionWrapper id="home" className="min-h-screen flex items-center relative overflow-hidden pt-32 pb-16">
-            {/* Background Elements */}
-            <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
-                <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-brand-gold/10 rounded-full blur-[100px] animate-pulse" />
-                <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-brand-navy/50 rounded-full blur-[100px]" />
-            </div>
+        <motion.section
+            ref={sectionRef}
+            className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36 md:pt-48 pb-20 mask-[linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]"
+            style={{
+                backgroundPositionY,
+            }}
+            animate={{ backgroundPositionX: 1200 }}
+            transition={{
+                duration: 120,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "linear",
+            }}
+        >
+            {/* Background Gradient */}
+            <div className="absolute inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(140,69,255,0.5)_15%,rgb(14,0,36,0.5)_78%,transparent)] z-0" />
 
-            <Container className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
-                {/* Text Content */}
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="space-y-6 text-center md:text-left"
-                >
-                    <div className="inline-block px-4 py-1.5 rounded-full border border-brand-gold/30 bg-brand-gold/10 backdrop-blur-sm">
-                        <span className="text-brand-gold text-sm font-semibold tracking-wider">Do interior do Ceará para o Brasil inteiro</span>
-                    </div>
+            {/* Planet Logic (Orb Animation) */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-64 md:size-96 rounded-full border border-white/20 bg-purple-500 shadow-[-20px_-20px_50px_rgb(255,255,255,0.5),-20px_-20px_80px_rgb(255,255,255,0.1),0_0_50px_rgb(140,69,255)] bg-[radial-gradient(50%_50%_at_16.8%_18.3%,white,rgb(184,148,255)_37.7%,rgb(24,0,66))] z-0" />
 
-                    <h1 className="text-5xl md:text-7xl font-display leading-tight text-white drop-shadow-2xl">
-                        Transforme seu negócio com <span className="text-brand-gold">Inteligência</span>
-                    </h1>
-
-                    <p className="text-lg md:text-xl text-gray-300 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                        Landing pages, automações e cartões virtuais para profissionais que querem crescer. Tecnologia acessível para destacar sua marca.
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-                        <Button size="lg" onClick={() => window.open(CONTACT_INFO.whatsapp.link, '_blank')} className="gap-2 group">
-                            Quero minha solução agora
-                            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                        <Button variant="outline" size="lg" className="gap-2">
-                            Ver Projetos
-                        </Button>
-                    </div>
-                </motion.div>
-
-                {/* Visual Content */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.2 }}
-                    className="relative flex justify-center perspective-1000"
-                >
-                    <div className="relative w-full max-w-[500px] aspect-square">
-                        {/* Glowing Ring Effect behind */}
-                        <div className="absolute inset-0 bg-brand-gold/20 rounded-full blur-3xl animate-pulse" />
-
-                        {/* Main Image */}
-                        <motion.img
-                            src="/assets/images/logo-3d.jpg"
-                            alt="Cérebro TamarAI"
-                            className="w-full h-full object-contain drop-shadow-2xl relative z-10 rounded-full"
-                            animate={{
-                                y: [0, -20, 0],
-                                rotate: [0, 2, -2, 0]
-                            }}
-                            transition={{
-                                duration: 6,
-                                repeat: Infinity,
-                                ease: "easeInOut"
-                            }}
-                        />
-
-
-                    </div>
-                </motion.div>
-            </Container>
-
-            {/* Floating WhatsApp Button (Global) */}
-            <motion.button
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                whileHover={{ scale: 1.1 }}
-                className="fixed bottom-6 right-6 z-50 p-4 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors"
-                onClick={() => window.open(CONTACT_INFO.whatsapp.link, '_blank')}
+            {/* Rings Animation */}
+            <motion.div
+                animate={{ rotate: "1turn" }}
+                transition={{
+                    duration: 60,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "linear",
+                }}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[344px] md:size-[580px] rounded-full border border-white opacity-20 z-0"
             >
-                <MessageCircle className="text-white w-8 h-8 fill-current" />
-            </motion.button>
-        </SectionWrapper>
+                <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 size-2 rounded-full bg-white" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 size-2 rounded-full bg-white" />
+                <div className="absolute top-1/2 left-full -translate-x-1/2 -translate-y-1/2 inline-flex size-5 items-center justify-center rounded-full border border-white">
+                    <div className="size-2 rounded-full bg-white" />
+                </div>
+            </motion.div>
+
+            <motion.div
+                animate={{ rotate: "-1turn" }}
+                transition={{
+                    duration: 60,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "linear",
+                }}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[444px] md:size-[780px] rounded-full border border-white/20 border-dashed z-0"
+            />
+
+            <motion.div
+                animate={{ rotate: "1turn" }}
+                transition={{
+                    duration: 90,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "linear",
+                }}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[544px] md:size-[980px] rounded-full border border-white opacity-20 z-0"
+            >
+                <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 size-2 rounded-full bg-white" />
+                <div className="absolute top-1/2 left-full -translate-x-1/2 -translate-y-1/2 size-2 rounded-full bg-white" />
+            </motion.div>
+
+
+            <div className="container relative z-10 text-center mt-10 md:mt-20 px-4">
+                <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="font-display text-[80px] md:text-[168px] leading-none tracking-tighter text-transparent bg-clip-text bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,0.5))]"
+                >
+                    TAMARAI
+                </motion.h1>
+
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                    className="mx-auto mt-6 max-w-xl text-lg md:text-xl text-white/70 font-light"
+                >
+                    Transforme seu negócio com inteligência. Landing pages de alta conversão, automações inteligentes e cartões virtuais. Tecnologia acessível para destacar sua marca.
+                </motion.p>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.4 }}
+                    className="mt-10 flex justify-center"
+                >
+                    <Button
+                        size="lg"
+                        className="bg-white text-brand-dark hover:bg-white/90 shadow-[0_0_20px_rgba(140,69,255,0.5)] rounded-full px-8 py-6 text-lg tracking-wide group"
+                        onClick={() => window.open(CONTACT_INFO.whatsapp.link, '_blank')}
+                    >
+                        Fale Conosco <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                </motion.div>
+            </div>
+        </motion.section>
     );
 }

@@ -10,7 +10,9 @@
 
 @layer base {
   body {
-    @apply bg-brand-navy text-brand-white font-sans antialiased;
+    @apply bg-brand-navy text-brand-white font-sans antialiased overflow-x-hidden selection:bg-brand-gold selection:text-white;
+    background-image: url('/assets/images/stars.png');
+    background-size: cover;
   }
 
   h1,
@@ -20,5 +22,24 @@
   h5,
   h6 {
     @apply font-display tracking-wide;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-brand-gray to-white/70;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-brand-gold to-white;
+  }
+
+  .mask-radial-faded {
+    mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
   }
 }
