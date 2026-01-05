@@ -83,9 +83,9 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="font-display text-[80px] md:text-[168px] leading-none tracking-tighter text-transparent bg-clip-text bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,0.5))]"
+                    className="font-sans font-bold text-[80px] md:text-[168px] leading-none tracking-tighter text-transparent bg-clip-text bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,0.5))]"
                 >
-                    TAMARAI
+                    TamarAI
                 </motion.h1>
 
                 <motion.p
