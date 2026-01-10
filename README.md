@@ -2,6 +2,9 @@
 
 Landing Page institucional moderna e interativa para a **TamarAI**, uma startup focada em transformar a advocacia e microempreendimentos com inteligência artificial, automação e design acessível.
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/da449108-09aa-4a0c-9925-8817a5831b9e" />
+
+
 ## 🚀 Sobre o Projeto
 
 Este projeto é a vitrine digital da TamarAI. Mais do que um site estático, é uma plataforma de apresentação que demonstra na prática as soluções oferecidas, como:
