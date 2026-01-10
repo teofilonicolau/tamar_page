@@ -61,11 +61,11 @@ export function Sobre() {
                                 Minha <span className="text-brand-gold">Jornada</span>
                             </h1>
                             <p className="text-xl text-gray-300 leading-relaxed">
-                                Eu sou <strong className="text-white">Teofilo Nicolau</strong>, apaixonado por tecnologia e inteligência artificial.
-                                Sou autodidata, aprendiz constante e desenvolvedor FullStack Júnior, com experiência em Java, Spring Boot, React, MySQL e AWS.
+                                Eu sou <strong className="text-white">Teofilo Nicolau</strong>. Desenvolvedor FullStack com foco em IA aplicada e eficiência operacional.
+                                Possuo experiência técnica em Java, Spring Boot, React, MySQL e AWS, orientada para a construção de sistemas robustos e escaláveis.
                             </p>
                             <p className="text-gray-400">
-                                Nos últimos meses, mergulhei na engenharia de prompts e na IA generativa, explorando ferramentas como Copilot e ChatGPT para criar soluções inovadoras e automatizar processos.
+                                Recentemente, direcionei minha atuação para a engenharia de prompts e integração de LLMs, utilizando ferramentas como Copilot e ChatGPT para desenvolver automações estratégicas e otimizar fluxos de trabalho.
                             </p>
                         </motion.div>
                     </div>
