@@ -17,7 +17,7 @@ export function Footer() {
                     <div className="space-y-6">
                         <Link to="/" className="flex items-center gap-3 group">
                             <div className="w-10 h-10 rounded-full border border-brand-gold/30 overflow-hidden group-hover:border-brand-gold transition-colors duration-500">
-                                <img src="/assets/images/logo-flat.jpg" alt="TamarAI" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                                <img src="/assets/images/logo-flat.webp" alt="TamarAI" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
                             </div>
                             <span className="font-sans text-2xl font-bold text-white tracking-tight group-hover:text-brand-gold transition-colors duration-300">TamarAI</span>
                         </Link>

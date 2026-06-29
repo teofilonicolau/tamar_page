@@ -27,7 +27,7 @@ export function Sobre() {
                         >
                             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-4 border-white/5 shadow-2xl">
                                 <img
-                                    src="/assets/images/teofilo-profile.jpg"
+                                    src="/assets/images/teofilo-profile.webp"
                                     alt="Teofilo Nicolau"
                                     className="w-full h-full object-cover"
                                 />

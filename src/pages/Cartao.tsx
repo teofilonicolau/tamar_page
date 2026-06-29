@@ -74,7 +74,7 @@ END:VCARD`;
                 <div className="p-8 flex flex-col items-center text-center border-b border-white/5 bg-gradient-to-b from-brand-gold/10 to-transparent">
                     <div className="w-32 h-32 rounded-full p-1 border-2 border-brand-gold mb-4 shadow-lg group">
                         <img
-                            src="/assets/images/logo-flat.jpg"
+                            src="/assets/images/logo-flat.webp"
                             alt="Teofilo Nicolau"
                             className="w-full h-full rounded-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />

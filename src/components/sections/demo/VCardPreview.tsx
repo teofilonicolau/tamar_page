@@ -14,7 +14,7 @@ export function VCardPreview() {
                 {/* FRONT */}
                 <div className="absolute inset-0 backface-hidden flex flex-col items-center pt-12 pb-8 px-6 bg-gradient-to-br from-slate-50 to-slate-100">
                     <div className="w-24 h-24 rounded-full bg-brand-navy mb-4 border-4 border-white shadow-lg overflow-hidden">
-                        <img src="/assets/images/logo-flat.jpg" alt="Profile" className="w-full h-full object-cover" />
+                        <img src="/assets/images/logo-flat.webp" alt="Profile" className="w-full h-full object-cover" />
                     </div>
                     <h3 className="text-2xl font-bold text-brand-navy">Rian Nicolau</h3>
                     <p className="text-brand-gold font-medium mb-6">Advogado & Desenvolvedor</p>

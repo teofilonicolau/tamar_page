@@ -67,7 +67,7 @@ export function Header() {
                     className="group flex items-center gap-3"
                 >
                     <div className="w-8 h-8 rounded-full overflow-hidden border border-brand-gold/30 group-hover:border-brand-gold/70 transition-colors duration-500">
-                        <img src="/assets/images/logo-flat.jpg" alt="TamarAI" className="w-full h-full object-cover" />
+                        <img src="/assets/images/logo-flat.webp" alt="TamarAI" className="w-full h-full object-cover" />
                     </div>
                     <span className="font-display text-xl tracking-[0.22em] text-white group-hover:text-white/80 transition-colors duration-300">
                         TAMAR<span className="text-brand-gold">AI</span>
