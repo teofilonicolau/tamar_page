@@ -15,11 +15,12 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Column */}
                     <div className="space-y-6">
-                        <Link to="/" className="flex items-center gap-3 group">
-                            <div className="w-10 h-10 rounded-full border border-brand-gold/30 overflow-hidden group-hover:border-brand-gold transition-colors duration-500">
-                                <img src="/assets/images/logo-flat.webp" alt="TamarAI" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
-                            </div>
-                            <span className="font-sans text-2xl font-bold text-white tracking-tight group-hover:text-brand-gold transition-colors duration-300">TamarAI</span>
+                        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="block group">
+                            <img
+                                src="/assets/images/logo-flat1.webp"
+                                alt="TamarAI — Agência Digital · IA"
+                                className="w-40 opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                            />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                             Transformando negócios com inteligência, design e tecnologia acessível.
