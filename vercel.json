@@ -1,9 +1,17 @@
 {
-    "installCommand": "npm install --legacy-peer-deps",
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ]
+  "installCommand": "npm install --legacy-peer-deps",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "tamarai.com.br" }],
+      "destination": "https://www.tamarai.com.br/$1",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

@@ -6,31 +6,24 @@
   html {
     scroll-behavior: smooth;
   }
-}
 
-@layer base {
   body {
-    @apply bg-brand-navy text-brand-white font-sans antialiased overflow-x-hidden selection:bg-brand-gold selection:text-white;
-    background-image: url('/assets/images/stars.png');
-    background-size: cover;
+    @apply bg-brand-dark text-brand-white font-sans antialiased overflow-x-hidden selection:bg-brand-gold selection:text-white;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-wide;
   }
 }
 
 @layer utilities {
+  /* Glassmorphism */
   .glass {
     @apply bg-white/5 backdrop-blur-lg border border-white/10;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
 
+  /* Text gradients */
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-brand-gray to-white/70;
   }
@@ -39,7 +32,42 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-brand-gold to-white;
   }
 
+  /* Radial fade mask */
   .mask-radial-faded {
     mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
   }
+
+  /* Cinematic letter-spacing utilities */
+  .tracking-cinema {
+    letter-spacing: 0.25em;
+  }
+
+  .tracking-ultra {
+    letter-spacing: 0.4em;
+  }
+
+  /* Thin border glow */
+  .border-glow {
+    box-shadow: 0 0 20px rgba(140, 69, 255, 0.15), inset 0 0 20px rgba(140, 69, 255, 0.05);
+  }
+
+  /* Section fade edges */
+  .fade-top {
+    mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #020005;
+}
+::-webkit-scrollbar-thumb {
+  background: #8C45FF30;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C45FF60;
 }

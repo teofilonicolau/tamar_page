@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { Container } from '../components/ui/container';
 import { SectionWrapper } from '../components/ui/section-wrapper';
-import { Rocket, Code, Terminal, Brain, Heart, ChevronLeft } from 'lucide-react';
+import { Rocket, Code, Terminal, Brain, Heart, ChevronLeft, Sparkles, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Sobre() {
     return (
-        <div className="pt-20"> {/* Padding for fixed header */}
+        <div className="pt-20">
             <SectionWrapper className="bg-brand-navy min-h-screen">
                 <Container>
                     {/* Back to Home */}
@@ -61,39 +61,27 @@ export function Sobre() {
                                 Minha <span className="text-brand-gold">Jornada</span>
                             </h1>
                             <p className="text-xl text-gray-300 leading-relaxed">
-                                Eu sou <strong className="text-white">Teofilo Nicolau</strong>. Desenvolvedor FullStack com foco em IA aplicada e eficiência operacional.
-                                Possuo experiência técnica em Java, Spring Boot, React, MySQL e AWS, orientada para a construção de sistemas robustos e escaláveis.
+                                Eu sou <strong className="text-white">Teofilo Nicolau</strong>. Fundador da TamarAI,
+                                AI Automation Engineer e a prova viva de que nunca é tarde para recomeçar.
                             </p>
-                            <p className="text-gray-400">
-                                Recentemente, direcionei minha atuação para a engenharia de prompts e integração de LLMs, utilizando ferramentas como Copilot e ChatGPT para desenvolver automações estratégicas e otimizar fluxos de trabalho.
+                            <p className="text-gray-400 leading-relaxed">
+                                Antes de qualquer linha de código, fui comerciante, confeiteiro e vendedor de quentinha.
+                                Comecei do zero na programação aos 54 anos — mal sabia ligar o notebook.
+                                Hoje crio agentes de IA, automatizo negócios e ajudo empresas a crescerem com tecnologia.
                             </p>
+                            <div className="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-2">
+                                <Sparkles size={16} className="text-brand-gold" />
+                                <span className="text-brand-gold text-sm font-medium">
+                                    AI Automation & Growth Engineer · Fundador da TamarAI
+                                </span>
+                            </div>
                         </motion.div>
                     </div>
 
                     {/* Timeline / Story */}
-                    <div className="max-w-3xl mx-auto space-y-24">
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="relative border-l-2 border-brand-gold/30 pl-8 md:pl-12 py-4"
-                        >
-                            <span className="absolute -left-[11px] top-0 bg-brand-navy border-2 border-brand-gold rounded-full p-1 text-brand-gold">
-                                <Rocket size={20} />
-                            </span>
-                            <h3 className="text-3xl font-display text-white mb-4">O Nascimento da TamarAI</h3>
-                            <div className="space-y-4 text-gray-300">
-                                <p>A TamarAI nasceu de um desafio real.</p>
-                                <p>Em março de 2025, um advogado me disse:</p>
-                                <blockquote className="border-l-4 border-brand-gold pl-4 italic text-white my-4 bg-white/5 p-4 rounded-r-lg">
-                                    "Eu gasto 3 horas escrevendo uma petição que segue sempre o mesmo padrão... você seria capaz de criar um robô que fizesse isso?"
-                                </blockquote>
-                                <p>Naquele momento, percebi que a inteligência artificial poderia transformar a advocacia.</p>
-                                <p>Sem esperar o momento perfeito, comecei a aprender na prática: tutoriais, documentações, madrugadas de código e muitos erros.</p>
-                                <p className="font-semibold text-brand-gold">O resultado? Uma aplicação que automatiza petições jurídicas e economiza até 90% do tempo dos advogados.</p>
-                            </div>
-                        </motion.div>
+                    <div className="max-w-3xl mx-auto space-y-20">
 
+                        {/* Capítulo 1 - Antes */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -103,37 +91,163 @@ export function Sobre() {
                             <span className="absolute -left-[11px] top-0 bg-brand-navy border-2 border-brand-gold rounded-full p-1 text-brand-gold">
                                 <Heart size={20} />
                             </span>
-                            <h3 className="text-3xl font-display text-white mb-4">Propósito & Missão</h3>
-                            <p className="text-gray-300 mb-6">
-                                Foi nesse embalo que decidi dar vida à minha própria startup: <strong className="text-white">TamarAI</strong> 🚀.
-                                Mais do que um projeto, ela é meu trabalho, meu ganha-pão e meu propósito.
+                            <h3 className="text-3xl font-display text-white mb-4">Antes do Código</h3>
+                            <div className="space-y-4 text-gray-300 leading-relaxed">
+                                <p>
+                                    Eu tinha cansado de preencher currículos.
+                                </p>
+                                <p>
+                                    Cansado de participar de processos seletivos. Cansado de receber e-mails com frases como: "Obrigado pelo interesse" ou "Você não foi selecionado desta vez".
+                                </p>
+                                <p>
+                                    Com 59 anos, depois de uma vida inteira de trabalho honesto como comerciante, confeiteiro e vendedor de quentinhas, percebi que muitos dos "nãos" que eu recebia tinham algo em comum: a minha idade.
+                                </p>
+                                <p className="text-white font-medium text-lg">
+                                    Mesmo assim, resolvi fazer algo que muita gente consideraria improvável: aprender programação do zero.
+                                </p>
+                                <p>
+                                    O problema? Eu mal sabia ligar o notebook direito.
+                                </p>
+                                <p>
+                                    Mas fui em frente. Bootcamps, vídeos, documentações, erros, dúvidas e muito aprendizado.
+                                </p>
+                                <p>
+                                    Foi nesse caminho que conheci a <strong className="text-brand-gold">Dona IA</strong>.
+                                </p>
+                                <p>
+                                    Gostei dela na hora. Resolvi aprender a conversar com ela. Descobri o Prompt Engineering na prática, usando, testando, errando e acertando.
+                                </p>
+                                <p className="text-white font-semibold">
+                                    Se o mercado insistia em olhar para a minha idade, eu decidi mostrar minha capacidade de aprender.
+                                </p>
+                                <p>
+                                    A tecnologia me ensinou uma coisa importante: conhecimento não tem prazo de validade.
+                                </p>
+                                <p className="italic text-brand-gold">
+                                    E eu ainda estou aprendendo.
+                                </p>
+                            </div>
+                        </motion.div>
+
+                        {/* Capítulo 2 - A Faísca */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="relative border-l-2 border-brand-gold/30 pl-8 md:pl-12 py-4"
+                        >
+                            <span className="absolute -left-[11px] top-0 bg-brand-navy border-2 border-brand-gold rounded-full p-1 text-brand-gold">
+                                <Rocket size={20} />
+                            </span>
+                            <h3 className="text-3xl font-display text-white mb-4">A Faísca que Acendeu Tudo</h3>
+                            <div className="space-y-4 text-gray-300 leading-relaxed">
+                                <p>
+                                    Depois de mais bootcamps e muita pesquisa, em março de 2025, um advogado me fez uma pergunta
+                                    que mudou tudo:
+                                </p>
+                                <blockquote className="border-l-4 border-brand-gold pl-4 italic text-white my-4 bg-white/5 p-4 rounded-r-lg">
+                                    "Eu gasto 3 horas escrevendo uma petição que segue sempre o mesmo padrão...
+                                    você seria capaz de criar um robô que fizesse isso?"
+                                </blockquote>
+                                <p>
+                                    Não esperei o momento perfeito. Mergulhei de cabeça: LangChain, RAG, agentes de IA,
+                                    madrugadas de código e muitos erros.
+                                </p>
+                                <p className="font-semibold text-brand-gold text-lg">
+                                    O resultado? Um protótipo de estagiário digital — um agente que criava petições e
+                                    cálculos jurídicos, economizando até 90% do tempo dos advogados.
+                                </p>
+                                <p>
+                                    Aí eu entendi que estava no caminho certo. E não parei mais.
+                                </p>
+                            </div>
+                        </motion.div>
+
+                        {/* Capítulo 3 - TamarAI */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="relative border-l-2 border-brand-gold/30 pl-8 md:pl-12 py-4"
+                        >
+                            <span className="absolute -left-[11px] top-0 bg-brand-navy border-2 border-brand-gold rounded-full p-1 text-brand-gold">
+                                <Code size={20} />
+                            </span>
+                            <h3 className="text-3xl font-display text-white mb-4">O Nascimento da TamarAI</h3>
+                            <div className="space-y-4 text-gray-300 leading-relaxed">
+                                <p>
+                                    Depois de vários projetos, alguns "nãos" no caminho e mais bootcamps,
+                                    criei a <strong className="text-white">TamarAI</strong> — minha startup,
+                                    meu trabalho e meu propósito.
+                                </p>
+                                <p>
+                                    Comecei criando agentes para me ajudar no marketing. Depois encarei um novo desafio:
+                                    refatorar a landing page de um escritório previdenciário. Depois um blog. E então
+                                    conheci o SEO.
+                                </p>
+                                <p className="font-semibold text-brand-gold">
+                                    Em 6 meses, resultados concretos. Fui convidado a assumir também
+                                    o marketing digital do escritório. 👏
+                                </p>
+                                <p>
+                                    Hoje estudo tráfego pago, crio agentes que me ajudam a trabalhar melhor
+                                    e sigo construindo — um projeto, um cliente, um desafio de cada vez.
+                                </p>
+                                <p className="text-gray-400 text-sm italic">
+                                    Não sou muito bom em decorar o nome de cada ferramenta — minha memória é visual.
+                                    Mas graças a Deus eu consigo resolver os desafios. 😊
+                                </p>
+                            </div>
+                        </motion.div>
+
+                        {/* Capítulo 4 - Hoje */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="relative border-l-2 border-brand-gold/30 pl-8 md:pl-12 py-4"
+                        >
+                            <span className="absolute -left-[11px] top-0 bg-brand-navy border-2 border-brand-gold rounded-full p-1 text-brand-gold">
+                                <TrendingUp size={20} />
+                            </span>
+                            <h3 className="text-3xl font-display text-white mb-4">O que Faço Hoje</h3>
+                            <p className="text-gray-300 mb-6 leading-relaxed">
+                                Pela TamarAI, ajudo pequenas e médias empresas do Ceará e do Brasil
+                                a crescerem com tecnologia acessível — sem precisar entender de código:
                             </p>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {[
-                                    "Pequenos começos podem gerar grandes propósitos.",
-                                    "Tecnologia acessível a qualquer profissional.",
-                                    "Automação inteligente é tempo ganho.",
-                                    "Aprendizado constante é o caminho."
+                                    "Landing pages que convertem de verdade",
+                                    "Automações com IA para economizar tempo",
+                                    "Agentes inteligentes para WhatsApp",
+                                    "SEO local para aparecer no Google",
+                                    "Tráfego pago no Google e Instagram",
+                                    "Cartões digitais com QR Code"
                                 ].map((item, i) => (
                                     <div key={i} className="bg-white/5 p-4 rounded-lg border border-white/10 flex items-center gap-3">
-                                        <div className="w-2 h-2 rounded-full bg-brand-gold" />
+                                        <div className="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0" />
                                         <span className="text-sm text-gray-200">{item}</span>
                                     </div>
                                 ))}
                             </div>
                         </motion.div>
 
-                        <div className="text-center pt-12">
+                        {/* CTA Final */}
+                        <div className="text-center pt-8 pb-16">
+                            <p className="text-xl text-gray-300 mb-3 leading-relaxed">
+                                Se um ex-vendedor de quentinha conseguiu criar uma startup de IA saindo do zero,
+                            </p>
                             <p className="text-2xl font-display text-white mb-8">
-                                Transformar ideias em soluções reais.
+                                imagina o que a gente pode fazer pelo seu negócio. 🚀
                             </p>
                             <Link to="/">
                                 <strong className="text-brand-gold text-lg hover:underline cursor-pointer">
-                                    Vamos construir o futuro juntos?
+                                    Vamos construir juntos?
                                 </strong>
                             </Link>
                         </div>
+
                     </div>
                 </Container>
             </SectionWrapper>

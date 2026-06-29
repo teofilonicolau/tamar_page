@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Bloquear rotas de utilitários
+Disallow: /cartao?print=true
+
+# Sitemap
+Sitemap: https://www.tamarai.com.br/sitemap.xml
