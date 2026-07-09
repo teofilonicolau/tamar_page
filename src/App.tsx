@@ -7,6 +7,7 @@ import { Sobre } from './pages/Sobre';
 import { PoliticaPrivacidade } from './pages/PoliticaPrivacidade';
 import { TermosUso } from './pages/TermosUso';
 import { Cartao } from './pages/Cartao';
+import { Ico } from './pages/Ico';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/termos-de-uso" element={<TermosUso />} />
           <Route path="/cartao" element={<Cartao />} />
+          <Route path="/agencia-digital-ico-ce" element={<Ico />} />
         </Routes>
         <Footer />
       </div>
